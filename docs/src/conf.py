@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'RedditLike.js-docs'
+project = 'RedditLike.js'
 copyright = '2024, Onion Kim'
 author = 'Onion Kim'
 
@@ -15,6 +15,23 @@ author = 'Onion Kim'
 
 extensions = [
     'myst_parser'
+]
+
+myst_enable_extensions = [
+    # "amsmath",
+    # "attrs_inline",
+    # "colon_fence",
+    # "deflist",
+    # "dollarmath",
+    # "fieldlist",
+    "html_admonition",
+    "html_image",
+    # "linkify",
+    # "replacements",
+    # "smartquotes",
+    # "strikethrough",
+    # "substitution",
+    # "tasklist",
 ]
 
 templates_path = ['_templates']

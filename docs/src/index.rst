@@ -15,7 +15,15 @@ Reddit-like web community built with javascript
 -----------------------------------------------
 
 .. include:: ./intro.md
-   :parser myst_parser.sphinx
+   :parser: myst_parser.sphinx_
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Quick Start
+
+   quick_start/setup.md
+   quick_start/quick_start.md
 
 
 .. toctree::
@@ -23,6 +31,16 @@ Reddit-like web community built with javascript
    :caption: Tutorial
 
    tutorials/tutorial.md
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Manual
+
+   manuals/customizing_backend.md
+   manuals/setup_google_oauth.md
+   manuals/setup_media_with_s3.md
+
+
 
 
 Indices and tables
