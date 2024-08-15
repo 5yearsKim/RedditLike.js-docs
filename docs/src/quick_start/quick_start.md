@@ -3,7 +3,7 @@
 
 ## Pre-requisite
 
-### 1. Install [node.js(>20)](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
+### 1. Install [node.js(>18)](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs)
 
 ### 2. Install [docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/)
  - Make sure user is in docker group with below command(to run docker without sudo)
@@ -27,59 +27,51 @@
 
 ## Quick Start
 
+1. Clone repository
+```sh
+git clone https://github.com/5yearsKim/RedditLike.js.git
+cd RedditLike.js
+```
+<br/>
 
-### Running a backend server with Docker
+2. Copy `.env` configration
+
 * Setup db and backend environment configuration
 ```bash
 cd envs;
 cp .env.db.sample .env.db;
 cp .env.backend.sample .env.backend;
 cd ..
-
-```
-
-* Start DB and Backend server with docker-compose up
-```bash
-docker-compose up
-```
-
-If backend server is successfully launched, your console log will show following message
-```
-redditlike-back  | [Nest] 29  - 06/20/2024, 10:07:18 AM     LOG [NestApplication] Nest application successfully started +4ms
-redditlike-back  | Server is running on http://localhost:3030
 ```
 
 <br/>
 
-### Running a frontend server(Manual)
-
-- Setup frontend environment
-
+3. Start an app through `docker-compose`
 ```bash
-cd frontend;
-cp .env.sample .env;
+docker compose up
 ```
 
-- Build docker image with docker command
+If backend server is successfully launched, your console log will show following message
+```
+redditlike-front  |   ▲ Next.js 13.5.6
+redditlike-front  |   - Local:        http://localhost:3010
+redditlike-front  |   - Network:      http://0.0.0.0:3010
+redditlike-front  | 
+redditlike-front  |  ✓ Ready in 41ms
+.....
 
-```bash
-docker build  -t ${USER}/redditlike-front .
+redditlike-back   | [Nest] 19  - 08/15/2024, 8:37:53 AM     LOG [NestApplication] Nest application successfully started +2ms
+redditlike-back   | Server is running on http://localhost:3030
 ```
 
-- Then run container
+<br/>
 
-```bash
-docker run -p 3010:3010 --name redditlike-front ${USER}/redditlike-front
-```
+4. Check out with web browser
+
+Open your favorite web browser and access `http://localhost:3010` as below. 
+
+![img](../assets/quick_start/start_page.png)
 
 
-
-Then if console shows this message, you are done!
-```
-  ▲ Next.js 13.5.6
-  - Local:        http://localhost:3010
-  - Network:      http://0.0.0.0:3010
-
- ✓ Ready in 39ms
-```
+<br/>
 
