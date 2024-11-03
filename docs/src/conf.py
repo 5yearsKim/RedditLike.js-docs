@@ -50,4 +50,4 @@ source_suffix = {
 html_theme = 'furo'
 html_static_path = ['../_static']
 
-html_favicon = 'assets/favicon.ico'
+html_favicon = '../_static/assets/favicon.ico'

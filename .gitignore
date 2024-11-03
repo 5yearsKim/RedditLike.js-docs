@@ -1,1 +1,3 @@
 docs/_build
+.venv
+.mypy_cache

@@ -17,8 +17,8 @@ RedditLike.js is an open-source Reddit-like community created only with Javascri
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="assets/logo.png" alt="Logo" width="80" height="80"/>
+  <a href="https://github.com/5yearsKim/RedditLike.js">
+    <img src="_static/assets/logo.png" alt="Logo" width="120" height="120"/>
   </a>
 
   <h3 align="center">RedditLike.js</h3>

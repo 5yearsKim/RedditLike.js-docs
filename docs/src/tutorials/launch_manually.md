@@ -83,6 +83,4 @@ PORT=3010 node .next/standalone/server.js
 
 Open your favorite browser and access to `http://localhost:3010`. If the below browser shows up, you are good.
 
-![img](../assets/quick_start/start_page.png)
-
-
+![img](../../_static/assets/quick_start/start_page.png)

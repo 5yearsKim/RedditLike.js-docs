@@ -22,7 +22,6 @@ Reddit-like web community built with javascript
    :maxdepth: 1
    :caption: Quick Start
 
-   quick_start/setup.md
    quick_start/quick_start.md
 
 
@@ -30,7 +29,7 @@ Reddit-like web community built with javascript
    :maxdepth: 1
    :caption: Tutorial
 
-   tutorials/tutorial.md
+   tutorials/launch_manually.md
 
 .. toctree::
    :maxdepth: 1

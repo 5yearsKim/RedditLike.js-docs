@@ -70,7 +70,7 @@ redditlike-back   | Server is running on http://localhost:3030
 
 Open your favorite web browser and access `http://localhost:3010` as below. 
 
-![img](../assets/quick_start/start_page.png)
+![img](../../_static/assets/quick_start/start_page.png)
 
 
 <br/>
